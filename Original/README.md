@@ -28,7 +28,7 @@ Teacher 모델의 크기는 1200의 hidden_size를 가진 2개의 Linear layer�
 ```
 python3 Train_teacher.py
 ```
-Test set에서 97.9%의 정확도를 보이는 Teacher 모델을 만들었습니다.
+Test set에서 97.3%의 정확도를 보이는 Teacher 모델을 만들었습니다.
 
 다음으로 작은사이즈의 Student에 Distillation 해보겠습니다.  
 Student도 2개의 linear hidden과 relu 활성함수를 사용합니다.
