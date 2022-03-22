@@ -23,4 +23,12 @@ Soft label을 사용하면 Hard label에 비해 정보량이 많고, 분산이�
 
 # MNIST 실험
 논문에 나온데로 MNIST데이터를 가지고 실험해보겠습니다.  
-Teacher 모델의 크기는 1200의 hidden_size를 가진 2개의 Linear layer에 Relu 그리고 높은 확률의 Dropout을 적용했습니다.
+Teacher 모델의 크기는 1200의 hidden_size를 가진 2개의 Linear layer에 Relu 그리고 높은 확률의 Dropout을 적용했습니다.  
+
+```
+python3 Train_teacher.py
+```
+Test set에서 97.9%의 정확도를 보이는 Teacher 모델을 만들었습니다.
+
+다음으로 작은사이즈의 Student에 Distillation 해보겠습니다.  
+Student도 2개의 linear hidden과 relu 활성함수를 사용합니다.
