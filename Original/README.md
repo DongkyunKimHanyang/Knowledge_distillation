@@ -32,6 +32,9 @@ python3 Train_teacher.py
 Test set에서 97.3%의 정확도를 보이는 Teacher 모델을 만들었습니다.
 
 ## Student 모델 학습
+```
+python3 Train_student.py
+```
 다음으로 작은사이즈의 Student에 Distillation 해보겠습니다.  
 Student도 2개의 linear hidden과 relu 활성함수를 사용합니다.
 
