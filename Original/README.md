@@ -32,3 +32,22 @@ Test set에서 97.3%의 정확도를 보이는 Teacher 모델을 만들었습니
 
 다음으로 작은사이즈의 Student에 Distillation 해보겠습니다.  
 Student도 2개의 linear hidden과 relu 활성함수를 사용합니다.
+
+Hidden_units = 300으로 줄였을때 성능입니다.
+|T|Without Distill|With Distill|
+|---|---|---|
+|1|97.9%|97.8%|
+|2||98.0%|
+|5||98.3%|
+|10||98.4%|
+크로스 엔트로피만 썼을때보다, Distill loss를 추가했을때 Temperature가 증가함에 따라서 성능이 향상됨을 보여줍니다. 
+  
+Hidden_units = 32 일때 성능입니다.
+|T|Without Distill|With Distill|
+|---|---|---|
+|1|97.1%|96.9%|
+|2||96.5%|
+|5||96.7%|
+|10||97.0%|
+모델의 크기가 작을때는 Distill loss를 적용하지 않는것이 더 성능이 좋음을 보여줍니다. 즉, 그냥 hard label로 학습시키는것이 더 성능이 좋았습니다.  
+Distillation이 정말 모델 압축에 효과가 있는것인지 다른 데이터셋, 모델로 다양하게 실험을 해봐야 할 것 같습니다.
