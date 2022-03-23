@@ -1,6 +1,8 @@
-Knowledge Distillation by On-the-Fly Native Ensemble
-Xu Lan et al. [링크](https://arxiv.org/abs/1806.04606)
-위 논문 요약 및 구현 저장소입니다.
+[Xu Lan et al., Knowledge Distillation by On-the-Fly Native Ensemble. ](https://arxiv.org/abs/1806.04606)  
+ 
+논문 저자의 공식 [github 저장소](https://github.com/Lan1991Xu/ONE_NeurIPS2018)가 존재합니다.  
+  
+간단한 내용정리와 코드로 따라해보겠습니다.  
 
 ## 연구 동기
 1. 기존의 Knowledge Distillation은 2단계로 나뉜다.  
