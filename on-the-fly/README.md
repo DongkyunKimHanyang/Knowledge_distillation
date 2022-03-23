@@ -21,7 +21,7 @@ Teacher 모델을 따로 생성하는 프로세스도 생략하고, 모델의 �
 ## 방법
 <img width="701" alt="image" src="https://user-images.githubusercontent.com/87703352/159649545-d69a545b-74ba-4898-a548-8a4ad4ed0784.png">  
 
-1.Resnet은 보통 5개의 블록으로 나눌수 있는데, 앞의 3개 블록을 Shared Layer로 배치 (그림 가장 왼쪽 회색)  
+1.Resnet은 보통 4개의 블록으로 나눌수 있는데, 앞의 3개 블록을 Shared Layer로 배치 (그림 가장 왼쪽 회색)  
 
 2.Shared layer 뒷단에 Branch Layer 여러개를 병렬로 이어 붙인다. Branch layer는 Resnet의 4번째 블록 + Linear layer로 구성된다  
 
