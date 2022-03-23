@@ -45,8 +45,8 @@ python3 Train_student.py
 |2||98.0%|
 |5||98.3%|
 |10||98.4%|
-
-크로스 엔트로피만 썼을때보다, Distill loss를 추가했을때 Temperature가 증가함에 따라서 성능이 향상됨을 보여줍니다. 
+모델의 크기를 줄인것만으로 일반화 성능 향상이 있는것 같습니다. Teacher보다 높은 성능을 보였습니다.
+그리고 Distill loss를 추가했을때 Temperature가 증가함에 따라서 추가로 성능이 향상됨을 보여줍니다. 
   
 ### Hidden_units = 32
 |T|Without Distill|With Distill|
