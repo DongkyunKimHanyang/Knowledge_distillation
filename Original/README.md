@@ -1,6 +1,6 @@
 # Distilling the Knowledge in a Neural Network
 [논문 링크](https://arxiv.org/abs/1503.02531)  
-위 논문은 Knowledge Distillation이 처음으로 제시된 논문입니다.  
+위 논문은 인공신경망의 Knowledge Distillation이 처음으로 제시된 논문입니다.  
 해당 논문의 내용을 간단히 정리하고, 코드로 작성해보겠습니다.  
   
 연구 동기: 사용자가 많은 시스템에 딥러닝 모델을 배포하는것은 서비스의 지연시간을 늘리고 큰 자원을 필요로 한다.  
