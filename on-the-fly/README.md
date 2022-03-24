@@ -23,9 +23,9 @@ Teacher 모델을 따로 생성하는 프로세스도 생략하고, 모델의 �
 
 1.Resnet은 보통 4개의 블록으로 나눌수 있는데, 앞의 3개 블록을 Shared Layer로 배치 (그림 가장 왼쪽 회색)  
 
-2.Shared layer 뒷단에 Branch Layer 여러개를 병렬로 이어 붙인다. Branch layer는 Resnet의 4번째 블록 + Linear layer로 구성된다  
+2.Shared layer 뒷단에 Branch Layer 여러개를 병렬로 이어붙인다. Branch layer는 Resnet의 4번째 블록 + Linear layer로 구성된다  
 
-3.Shared layer 뒷단에 Gate Layer를 하나 붙여서 Branch layer들의 Weighted average Ensemble에 사용   
+3.Shared layer 뒷단에 Gate Layer를 하나 붙여서 Branch layer들의 Weighted average Ensemble logit을 만드는데 사용   
   <img width="126" alt="image" src="https://user-images.githubusercontent.com/87703352/159650553-26b616cf-8dca-4c63-91b9-c22bdb91f41b.png">  
   즉, 위 식처럼 각 Branch layer 출력 z_i에 Gate layer의 출력을 계수로하는 앙상블 출력 생성  
 
