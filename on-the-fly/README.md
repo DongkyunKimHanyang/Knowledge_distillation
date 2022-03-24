@@ -39,7 +39,7 @@ Teacher 모델을 따로 생성하는 프로세스도 생략하고, 모델의 �
 <img width="227" alt="image" src="https://user-images.githubusercontent.com/87703352/159651833-ed75aa72-f40f-4cce-b662-dff951833c01.png">  
 
 결국에는 Ensemble 출력이 Teacher, 그리고 각 Branch의 출력이 Student가 되는 Online Distillation입니다.  
-모델 압축보다는 Knowledge Distillation으로 multi-branch 모델을 학습시키고, 일반화 성능 향상을 노린 논문 같습니다.  
+모델 압축보다는 Knowledge Distillation으로 multi-branch 모델을 학습시키고, 일반화 성능 향상 시킨 논문입니다.  
 
 
 ## CIFAR100 실험
