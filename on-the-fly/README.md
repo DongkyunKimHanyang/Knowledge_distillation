@@ -44,8 +44,8 @@ Teacher 모델을 따로 생성하는 프로세스도 생략하고, 모델의 �
 
 ## CIFAR100 실험
 위 방법론을 구현하여 CIFAR100 데이터셋에 실험해보겠습니다.  
+Resnet110을 베이스라인으로 활용했습니다.  
+논문에 제시된 모델을 구현하기 위해서 Resnet110의 3번째 블록까지 shared layer로 사용 하고 그뒤에 4번째 블록 3개를 병렬로 달았습니다.
+![Figure_1](https://user-images.githubusercontent.com/87703352/159844855-4b7e2654-7fe7-45d0-bf47-a2bcae12caa1.png)  
 
-
-
-
-
+논문에서 제시된 ONE 모델이 Baseline보다 성능이 좋은것을 보여줍니다.
