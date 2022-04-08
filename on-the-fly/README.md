@@ -2,7 +2,7 @@
  
 논문 저자의 공식 [github 저장소](https://github.com/Lan1991Xu/ONE_NeurIPS2018)가 존재합니다.  
   
-간단한 내용정리와 코드로 따라해보겠습니다.  
+여기는 간단한 내용정리와 코드로 재구성한 저장소입니다.  
 
 ## 연구 동기
 1. 기존의 Knowledge Distillation은 2단계로 나뉜다.  
