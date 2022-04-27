@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
 
                 if calc_KD_loss == True:
-                    # 논문에서는 2번째 텀에 T^2를 붙이하고 헀지만 안붙이는게 더좋음
+                    # 논문에서는 2번째 텀에 T^2를 붙이하고 헀지만 안붙이는게 실험 상 더 좋았다
                     loss = 0.5* CE_loss_fn(student_logits, labels) + 0.5 *(-F.log_softmax(student_logits/T,-1) * F.softmax(teacher_logits/T,-1)).sum(1).mean()
                 elif calc_KD_loss == False:
                     loss = CE_loss_fn(student_logits, labels)
